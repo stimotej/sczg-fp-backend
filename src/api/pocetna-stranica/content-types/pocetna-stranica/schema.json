@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "pocetna_stranicas",
+  "info": {
+    "singularName": "pocetna-stranica",
+    "pluralName": "pocetna-stranicas",
+    "displayName": "Pocetna_stranica",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Naslov": {
+      "type": "string",
+      "default": "Francuski paviljon SCZG",
+      "required": true
+    },
+    "Slika": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Informacije": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Drustvene_mreze": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elementi.drustvena-mreza"
+    },
+    "Virtualna_setnja": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Naslov_virtualne_setnje": {
+      "type": "string",
+      "default": "Virtualna šetnja 360°",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_elementi_sliders",
+  "info": {
+    "displayName": "Slider",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Naslov": {
+      "type": "string"
+    },
+    "Eventi": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    },
+    "Istaknuti_naslov": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

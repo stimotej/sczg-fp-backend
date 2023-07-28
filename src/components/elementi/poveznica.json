@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elementi_poveznicas",
+  "info": {
+    "displayName": "Poveznica",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Naslov": {
+      "type": "string",
+      "default": "Pogledaj",
+      "required": true
+    },
+    "Boja_pozadine": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "Boja_teksta": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

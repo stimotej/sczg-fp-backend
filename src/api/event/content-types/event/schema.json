@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Naslov": {
+      "type": "string",
+      "required": true
+    },
+    "Autor": {
+      "type": "string",
+      "required": true
+    },
+    "Pocetak": {
+      "type": "datetime"
+    },
+    "Kraj": {
+      "type": "datetime"
+    },
+    "Poveznica": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elementi.poveznica",
+      "required": true
+    },
+    "Slika": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Boja_naslova": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "Sadrzaj": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Poveznice_sadrzaja": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elementi.poveznica-link"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Naslov",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elementi_drustvena_mrezas",
+  "info": {
+    "displayName": "Drustvena_mreza",
+    "icon": "twitter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Link": {
+      "type": "string",
+      "required": true
+    },
+    "Boja_pozadine": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "Boja_ikone": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "Ikona": {
+      "type": "customField",
+      "customField": "plugin::react-icons.icon",
+      "required": true
+    }
+  }
+}
