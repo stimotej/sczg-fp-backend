@@ -45,13 +45,6 @@
       "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
       "customField": "plugin::color-picker.color"
     },
-    "Sadrzaj": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbarBaloon"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
-    },
     "Poveznice_sadrzaja": {
       "type": "component",
       "repeatable": true,
@@ -61,6 +54,14 @@
       "type": "uid",
       "targetField": "Naslov",
       "required": true
+    },
+    "Sadrzaj": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

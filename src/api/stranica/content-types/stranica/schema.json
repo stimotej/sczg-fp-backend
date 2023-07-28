@@ -27,13 +27,6 @@
         "images"
       ]
     },
-    "Sadrzaj": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbarBaloon"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
-    },
     "Poveznica": {
       "type": "component",
       "repeatable": false,
@@ -72,6 +65,14 @@
       ],
       "default": "Tekst",
       "required": true
+    },
+    "Sadrzaj": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
